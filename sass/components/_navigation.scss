@@ -1,0 +1,52 @@
+@use "../settings" as *;
+
+@mixin navigation-styles {
+  nav,
+  .ui-nav {
+    color: var(--clr-text);
+  }
+
+  nav ul,
+  nav ol,
+  .ui-nav-list {
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  nav li,
+  .ui-nav-item {
+    margin: 0;
+
+    &::before {
+      display: none;
+      content: none;
+    }
+  }
+
+  nav.vertical ul,
+  .ui-nav.vertical .ui-nav-list,
+  .ui-nav-list.vertical {
+    flex-direction: column;
+  }
+
+  nav.right,
+  .ui-nav.right,
+  .ui-nav-list.right {
+    justify-content: flex-end;
+  }
+
+  nav.center,
+  .ui-nav.center,
+  .ui-nav-list.center {
+    justify-content: center;
+  }
+
+  nav.compact ul,
+  .ui-nav.compact .ui-nav-list,
+  .ui-nav-list.compact {
+    gap: 0.75rem;
+  }
+}

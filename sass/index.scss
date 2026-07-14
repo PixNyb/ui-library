@@ -6,6 +6,8 @@
 @forward "components/forms";
 @forward "components/dialog";
 @forward "components/layout";
+@forward "components/navigation";
+@forward "components/shell";
 @forward "components/syntax";
 
 @use "settings";
@@ -16,6 +18,8 @@
 @use "components/forms" as forms;
 @use "components/dialog" as dialog;
 @use "components/layout" as layout;
+@use "components/navigation" as navigation;
+@use "components/shell" as shell;
 @use "components/syntax" as syntax;
 
 @mixin install {
@@ -26,5 +30,7 @@
   @include forms.form-styles();
   @include dialog.dialog-styles();
   @include layout.layout-styles();
+  @include navigation.navigation-styles();
+  @include shell.shell-styles();
   @include syntax.syntax-styles();
 }
