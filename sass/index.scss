@@ -7,8 +7,6 @@
 @forward "components/dialog";
 @forward "components/layout";
 @forward "components/syntax";
-@forward "components/scroller";
-@forward "components/popup";
 
 @use "settings";
 @use "theme";
@@ -19,8 +17,6 @@
 @use "components/dialog" as dialog;
 @use "components/layout" as layout;
 @use "components/syntax" as syntax;
-@use "components/scroller" as scroller;
-@use "components/popup" as popup;
 
 @mixin install {
   @include theme.theme-tokens();
@@ -31,6 +27,4 @@
   @include dialog.dialog-styles();
   @include layout.layout-styles();
   @include syntax.syntax-styles();
-  @include scroller.scroller-styles();
-  @include popup.popup-styles();
 }
