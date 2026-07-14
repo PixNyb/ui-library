@@ -1,0 +1,51 @@
+$ui-white: #ffffff !default;
+$ui-black: #000000 !default;
+$ui-gray: #f8f8f8 !default;
+$ui-background: $ui-white !default;
+$ui-accent: $ui-gray !default;
+$ui-text: $ui-black !default;
+$ui-link: #6b6b6b !default;
+$ui-green: #228b22 !default;
+$ui-red: #b22222 !default;
+$ui-yellow: #daa520 !default;
+$ui-blue: #1e90ff !default;
+$ui-teal: #008080 !default;
+$ui-purple: #800080 !default;
+$ui-orange: #ff8c00 !default;
+
+$ui-dark-white: #d0d0d0 !default;
+$ui-dark-black: #1d1d1d !default;
+$ui-dark-gray: #272727 !default;
+$ui-dark-background: $ui-dark-black !default;
+$ui-dark-accent: $ui-dark-gray !default;
+$ui-dark-text: $ui-dark-white !default;
+$ui-dark-link: #a1a1a1 !default;
+$ui-dark-green: #32cd32 !default;
+$ui-dark-red: #ff6347 !default;
+$ui-dark-yellow: #ffd700 !default;
+$ui-dark-blue: #1e90ff !default;
+$ui-dark-teal: #20b2aa !default;
+$ui-dark-purple: #9370db !default;
+$ui-dark-orange: #ff8c00 !default;
+
+$font-family: "Montserrat", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-variable:
+  "Montserrat Variable", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$heading-font-family:
+  "Montserrat", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$content-width: 1200px !default;
+$wide-breakpoint: 1300px !default;
+$narrow-breakpoint: 768px !default;
+$button-border-width: 5px !default;
+$surface-border-width: 1rem !default;
+$default-line-height: 1.625 !default;
+
+@mixin font-face($family, $src, $weight: 400, $style: normal, $format: "truetype", $display: swap) {
+  @font-face {
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    font-display: $display;
+    src: url($src) format($format);
+  }
+}

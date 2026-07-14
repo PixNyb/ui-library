@@ -1,0 +1,35 @@
+{
+    "name": "@pixnyb/ui-library",
+    "version": "0.1.0",
+    "private": false,
+    "description": "Reusable Sass UI primitives.",
+    "sass": "sass/index.scss",
+    "style": "dist/ui-library.css",
+    "files": [
+        "sass",
+        "dist",
+        "CHANGELOG.md",
+        "README.md"
+    ],
+    "scripts": {
+        "build": "npx --yes sass sass/build.scss dist/ui-library.css --style=expanded",
+        "build:min": "npx --yes sass sass/build.scss dist/ui-library.min.css --style=compressed",
+        "build:all": "npm run build && npm run build:min",
+        "changelog": "node scripts/generate-changelog.mjs",
+        "clean": "rm -rf dist",
+        "prepack": "npm run build:all"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": {
+            "sass": "./sass/index.scss",
+            "style": "./dist/ui-library.css",
+            "default": "./dist/ui-library.css"
+        },
+        "./sass": "./sass/index.scss",
+        "./dist/ui-library.css": "./dist/ui-library.css",
+        "./dist/ui-library.min.css": "./dist/ui-library.min.css"
+    }
+}

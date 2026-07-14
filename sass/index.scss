@@ -1,0 +1,36 @@
+@forward "settings";
+@forward "theme";
+@forward "base";
+@forward "components/buttons";
+@forward "components/cards";
+@forward "components/forms";
+@forward "components/dialog";
+@forward "components/layout";
+@forward "components/syntax";
+@forward "components/scroller";
+@forward "components/popup";
+
+@use "settings";
+@use "theme";
+@use "base";
+@use "components/buttons" as buttons;
+@use "components/cards" as cards;
+@use "components/forms" as forms;
+@use "components/dialog" as dialog;
+@use "components/layout" as layout;
+@use "components/syntax" as syntax;
+@use "components/scroller" as scroller;
+@use "components/popup" as popup;
+
+@mixin install {
+  @include theme.theme-tokens();
+  @include base.base-styles();
+  @include buttons.button-styles();
+  @include cards.card-styles();
+  @include forms.form-styles();
+  @include dialog.dialog-styles();
+  @include layout.layout-styles();
+  @include syntax.syntax-styles();
+  @include scroller.scroller-styles();
+  @include popup.popup-styles();
+}

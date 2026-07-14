@@ -1,0 +1,18 @@
+@use "../settings" as *;
+
+@mixin dialog-styles {
+  dialog {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 500px;
+    border: $surface-border-width solid var(--clr-accent);
+    background-color: var(--clr-background);
+    color: inherit;
+
+    &[open] {
+      display: flex;
+    }
+  }
+}

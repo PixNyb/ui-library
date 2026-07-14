@@ -1,0 +1,68 @@
+@use "../settings" as *;
+
+@mixin card-styles {
+  .card-holder {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+  }
+
+  .card,
+  .cookie-notice {
+    display: inline-flex;
+    flex-flow: column nowrap;
+    background-color: var(--clr-accent);
+    padding: 2rem;
+    flex: 1 1 300px;
+    max-width: 100%;
+
+    @media screen and (max-width: $wide-breakpoint) {
+      padding: 1rem;
+    }
+
+    .info {
+      display: inline-flex;
+      gap: 1rem;
+
+      span {
+        position: relative;
+
+        & + span {
+          margin-left: 0.5rem;
+
+          &::before {
+            content: "";
+            background-color: var(--clr-background);
+            display: block;
+            width: 0.5rem;
+            height: 0.5rem;
+            position: absolute;
+            right: calc(100% + 0.5rem);
+            top: calc(1rem / 2);
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+
+    h3:first-child {
+      margin-top: 0;
+    }
+
+    p:first-of-type {
+      margin-top: 0;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    a:last-child {
+      margin-top: auto;
+    }
+
+    hr {
+      border-color: var(--clr-background);
+    }
+  }
+}

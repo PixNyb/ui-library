@@ -1,0 +1,138 @@
+@use "../settings" as *;
+
+@mixin syntax-styles {
+  .highlighter-rouge {
+    .k {
+      color: var(--clr-blue);
+    }
+    .c {
+      color: var(--clr-green);
+    }
+    .c1 {
+      color: var(--clr-green);
+    }
+    .cm {
+      color: var(--clr-green);
+    }
+    .cp {
+      color: var(--clr-green);
+    }
+    .c2 {
+      color: var(--clr-green);
+    }
+    .cs {
+      color: var(--clr-green);
+    }
+    .g {
+      color: var(--clr-red);
+    }
+    .gd {
+      color: var(--clr-red);
+    }
+    .ge {
+      font-style: italic;
+    }
+    .gr {
+      color: var(--clr-red);
+    }
+    .gh {
+      color: var(--clr-blue);
+    }
+    .gi {
+      color: var(--clr-green);
+    }
+    .go {
+      color: var(--clr-yellow);
+    }
+    .gp {
+      color: var(--clr-blue);
+    }
+    .gs {
+      font-weight: bold;
+    }
+    .gu {
+      color: var(--clr-teal);
+    }
+    .gt {
+      color: var(--clr-red);
+    }
+    .kc {
+      color: var(--clr-blue);
+    }
+    .kd {
+      color: var(--clr-blue);
+    }
+    .kn {
+      color: var(--clr-blue);
+    }
+    .kp {
+      color: var(--clr-blue);
+    }
+    .kr {
+      color: var(--clr-blue);
+    }
+    .kt {
+      color: var(--clr-blue);
+    }
+    .m {
+      color: var(--clr-teal);
+    }
+    .s {
+      color: var(--clr-yellow);
+    }
+    .na {
+      color: var(--clr-teal);
+    }
+    .nb {
+      color: var(--clr-purple);
+    }
+    .nc {
+      color: var(--clr-teal);
+    }
+    .no {
+      color: var(--clr-teal);
+    }
+    .nd {
+      color: var(--clr-blue);
+    }
+    .ni {
+      color: var(--clr-teal);
+    }
+    .ne {
+      color: var(--clr-teal);
+    }
+    .nf {
+      color: var(--clr-teal);
+    }
+    .nl {
+      color: var(--clr-teal);
+    }
+    .nn {
+      color: var(--clr-teal);
+    }
+    .nt {
+      color: var(--clr-teal);
+    }
+    .nv {
+      color: var(--clr-teal);
+    }
+    .ow {
+      color: var(--clr-blue);
+    }
+    .w {
+      color: var(--clr-yellow);
+    }
+    .mf {
+      color: var(--clr-teal);
+    }
+    .mh {
+      color: var(--clr-teal);
+    }
+    .mi {
+      color: var(--clr-teal);
+    }
+    .mo {
+      color: var(--clr-teal);
+    }
+  }
+}

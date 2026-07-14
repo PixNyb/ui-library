@@ -1,0 +1,72 @@
+@use "settings" as *;
+
+@mixin theme-tokens {
+  :root {
+    --clr-white: #{$ui-white};
+    --clr-black: #{$ui-black};
+    --clr-gray: #{$ui-gray};
+    --clr-background: #{$ui-background};
+    --clr-accent: #{$ui-accent};
+    --clr-text: #{$ui-text};
+    --clr-link: #{$ui-link};
+    --clr-green: #{$ui-green};
+    --clr-red: #{$ui-red};
+    --clr-yellow: #{$ui-yellow};
+    --clr-blue: #{$ui-blue};
+    --clr-teal: #{$ui-teal};
+    --clr-purple: #{$ui-purple};
+    --clr-orange: #{$ui-orange};
+
+    --ui-white: #{$ui-white};
+    --ui-black: #{$ui-black};
+    --ui-gray: #{$ui-gray};
+    --ui-background: #{$ui-background};
+    --ui-accent: #{$ui-accent};
+    --ui-text: #{$ui-text};
+    --ui-link: #{$ui-link};
+    --ui-green: #{$ui-green};
+    --ui-red: #{$ui-red};
+    --ui-yellow: #{$ui-yellow};
+    --ui-blue: #{$ui-blue};
+    --ui-teal: #{$ui-teal};
+    --ui-purple: #{$ui-purple};
+    --ui-orange: #{$ui-orange};
+
+    --font-family: #{$font-family};
+    --font-family-variable: #{$font-family-variable};
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --clr-white: #{$ui-dark-white};
+      --clr-black: #{$ui-dark-black};
+      --clr-gray: #{$ui-dark-gray};
+      --clr-background: #{$ui-dark-background};
+      --clr-accent: #{$ui-dark-accent};
+      --clr-text: #{$ui-dark-text};
+      --clr-link: #{$ui-dark-link};
+      --clr-green: #{$ui-dark-green};
+      --clr-red: #{$ui-dark-red};
+      --clr-yellow: #{$ui-dark-yellow};
+      --clr-blue: #{$ui-dark-blue};
+      --clr-teal: #{$ui-dark-teal};
+      --clr-purple: #{$ui-dark-purple};
+      --clr-orange: #{$ui-dark-orange};
+
+      --ui-white: #{$ui-dark-white};
+      --ui-black: #{$ui-dark-black};
+      --ui-gray: #{$ui-dark-gray};
+      --ui-background: #{$ui-dark-background};
+      --ui-accent: #{$ui-dark-accent};
+      --ui-text: #{$ui-dark-text};
+      --ui-link: #{$ui-dark-link};
+      --ui-green: #{$ui-dark-green};
+      --ui-red: #{$ui-dark-red};
+      --ui-yellow: #{$ui-dark-yellow};
+      --ui-blue: #{$ui-dark-blue};
+      --ui-teal: #{$ui-dark-teal};
+      --ui-purple: #{$ui-dark-purple};
+      --ui-orange: #{$ui-dark-orange};
+    }
+  }
+}
