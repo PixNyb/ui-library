@@ -1,11 +1,6 @@
 @use "../settings" as *;
 
 @mixin navigation-styles {
-  nav,
-  .ui-nav {
-    color: var(--clr-text);
-  }
-
   nav ul,
   nav ol,
   .ui-nav-list {

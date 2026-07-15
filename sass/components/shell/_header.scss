@@ -1,0 +1,33 @@
+@use "../../settings" as *;
+
+@mixin header-styles {
+    header,
+    .ui-header {
+        background-color: var(--clr-background);
+        color: var(--clr-text);
+        display: flex;
+        align-items: center;
+        gap: $space-sm;
+        padding: $shell-header-padding-y $shell-header-padding-x;
+
+        nav,
+        .ui-nav {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+    }
+
+    header.sticky,
+    .ui-header.sticky {
+        position: sticky;
+        top: 0;
+        z-index: $z-index-sticky;
+    }
+
+    header.fullwidth,
+    .ui-header.fullwidth {
+        max-width: unset;
+        padding: 0 $shell-shell-padding-x;
+    }
+}

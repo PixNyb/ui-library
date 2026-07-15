@@ -1,0 +1,46 @@
+@use "../settings" as *;
+
+@mixin text-styles {
+    p,
+    li {
+        line-height: $default-line-height;
+    }
+
+    b {
+        font-weight: 600;
+    }
+
+    a {
+        font-family: var(--font-family-variable);
+        color: var(--clr-link);
+        text-decoration: underline;
+        text-decoration-color: var(--clr-link);
+        font-variation-settings: "wght" 500;
+        transition: font-variation-settings $transition-duration;
+
+        &:hover {
+            font-variation-settings: "wght" 700;
+        }
+
+        .link-icon {
+            vertical-align: super;
+            font-size: $icon-size-xs;
+        }
+    }
+
+    address {
+        font-style: normal;
+    }
+
+    q {
+        quotes: "“" "”" "‘" "’";
+    }
+
+    .text-small {
+        font-size: $icon-size-sm;
+    }
+
+    sup {
+        font-size: 0.6rem;
+    }
+}

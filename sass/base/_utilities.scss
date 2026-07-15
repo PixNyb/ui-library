@@ -1,0 +1,25 @@
+@use "../settings" as *;
+
+@mixin utility-styles {
+    @media screen and (max-width: $wide-breakpoint) {
+        .desktop-only {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: $narrow-breakpoint) {
+        .tablet-only {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: $wide-breakpoint) {
+        .tablet-only {
+            display: none;
+        }
+
+        .mobile-only {
+            display: none;
+        }
+    }
+}

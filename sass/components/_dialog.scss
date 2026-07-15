@@ -6,7 +6,7 @@
     flex-direction: column;
     gap: 1rem;
     padding: 2rem;
-    max-width: 500px;
+    max-width: calc($content-width / 2);
     border: $surface-border-width solid var(--clr-accent);
     background-color: var(--clr-background);
     color: inherit;

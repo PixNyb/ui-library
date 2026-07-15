@@ -1,0 +1,23 @@
+@use "../settings" as *;
+
+@mixin heading-styles {
+    @for $i from 1 through 6 {
+        h#{$i} {
+            font-size: 2rem - 0.2rem * $i;
+            font-family: $heading-font-family;
+            font-weight: 600;
+
+            &.large {
+                font-size: 3rem - 0.2rem * $i;
+
+                @media screen and (max-width: $narrow-breakpoint) {
+                    font-size: 2.5rem - 0.2rem * $i;
+                }
+            }
+
+            &[id] {
+                cursor: pointer;
+            }
+        }
+    }
+}

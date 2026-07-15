@@ -40,6 +40,33 @@ $button-border-width: 5px !default;
 $surface-border-width: 1rem !default;
 $default-line-height: 1.625 !default;
 
+$space-xxs: 0.25rem !default;
+$space-xs: 0.5rem !default;
+$space-sm: 1rem !default;
+$space-md: 2rem !default;
+$space-lg: 4rem !default;
+
+$transition-duration: 0.3s !default;
+
+$icon-size-sm: 0.8rem !default;
+$icon-size-xs: 0.6rem !default;
+$icon-size-inline: 1.2em !default;
+
+$border-thin: 1px !default;
+$z-index-sticky: 1000 !default;
+
+$shell-header-padding-y: $space-sm !default;
+$shell-header-padding-x: 1.5rem !default;
+$shell-main-margin-top: 12rem !default;
+$shell-main-margin-bottom: 6rem !default;
+$shell-main-margin-top-mobile: 8rem !default;
+$shell-main-margin-bottom-mobile: 4rem !default;
+$shell-main-padding-x-mobile: $space-md !default;
+$shell-shell-padding-x: $space-lg !default;
+$shell-footer-padding: $space-sm !default;
+$shell-footer-font-size: 0.8rem !default;
+$shell-footer-gap: $space-sm !default;
+
 @mixin font-face($family, $src, $weight: 400, $style: normal, $format: "truetype", $display: swap) {
   @font-face {
     font-family: $family;

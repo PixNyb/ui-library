@@ -1,0 +1,29 @@
+@use "../../settings" as *;
+
+@mixin footer-styles {
+    footer,
+    .ui-footer {
+        background-color: var(--clr-background);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: $shell-footer-padding;
+        display: flex;
+        justify-content: space-between;
+        font-size: $shell-footer-font-size;
+        gap: $shell-footer-gap;
+
+        @media screen and (max-width: $wide-breakpoint) {
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    }
+
+    footer.fullwidth,
+    .ui-footer.fullwidth {
+        max-width: unset;
+        padding: 0 $shell-shell-padding-x;
+    }
+}

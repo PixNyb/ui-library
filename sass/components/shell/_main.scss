@@ -1,0 +1,31 @@
+@use "../../settings" as *;
+
+@mixin main-styles {
+    main,
+    .ui-main {
+        width: 100%;
+        margin: $shell-main-margin-top auto $shell-main-margin-bottom auto;
+        max-width: $content-width;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: $space-md;
+        flex: 1;
+
+        @media screen and (max-width: $wide-breakpoint) {
+            margin: $shell-main-margin-top-mobile auto $shell-main-margin-bottom-mobile auto;
+            padding: 0 $shell-main-padding-x-mobile;
+            width: unset;
+        }
+    }
+
+    main.centered,
+    .ui-main.centered {
+        align-items: center;
+    }
+
+    main.fullwidth,
+    .ui-main.fullwidth {
+        max-width: unset;
+        padding: 0 $shell-shell-padding-x;
+    }
+}
