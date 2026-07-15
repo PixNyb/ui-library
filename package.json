@@ -1,6 +1,6 @@
 {
     "name": "@pixnyb/ui-library",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "private": false,
     "description": "Reusable Sass UI primitives.",
     "sass": "sass/index.scss",
